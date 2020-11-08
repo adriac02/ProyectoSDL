@@ -34,6 +34,7 @@
 # for Visual C++
 Debug
 Release
+.vs
 *.user
 *.ncb
 *.suo
