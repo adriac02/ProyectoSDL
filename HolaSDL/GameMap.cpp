@@ -24,6 +24,11 @@ GameMap::GameMap(std::string filename) {
 			case 3:
 				mapa[j, i] = Vitamins;
 				break;
+			// esto habra que cambiarlo para 5-8 pos de fantasmas y 9 pos de pacman
+			default:
+				mapa[j, i] = Empty;
+				break;
+			// ---------------------------
 			}
 		}
 	}

@@ -3,12 +3,18 @@
 #include "SDL_image.h"
 #include "checkML.h"
 #include <iostream>
+#include "GameMap.h"
+#include "Game.h"
 
 using namespace std;
 
 using uint = unsigned int;
 
 void firstTest() {
+	GameMap* map = new GameMap("level01.dat");
+	Game* game = new Game();
+
+
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF); // Check Memory Leaks
 	SDL_Window* window = nullptr;
 	SDL_Renderer* renderer = nullptr;
@@ -32,6 +38,11 @@ void firstTest() {
 }
 
 int main(int argc, char* argv[]){
-	firstTest();
+	
+
+
+
+
+
 	return 0;
 }
